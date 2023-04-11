@@ -5,17 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bossfighter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="195" >
-    <Grid Margin="0,0,0,12" Height="266" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="192">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="95*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Label Content="Welcome to" HorizontalAlignment="Left" Margin="14,1,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF330BF9" FontFamily="Felix Titling" Width="150" Height="53"/>
-        <Label Content="Fortnite ☢️" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="22" FontWeight="Bold" Foreground="#FFFB0707" Width="176" RenderTransformOrigin="0.6,0.466" Height="59"/>
-        <Label Content="Enter your Name:" HorizontalAlignment="Left" Margin="37,151,0,0" VerticalAlignment="Top" Width="104" Height="41"/>
-        <TextBox HorizontalAlignment="Left" Margin="18,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="28"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="18,228,0,0" VerticalAlignment="Top" Width="146" Height="32"/>
+        Title="Doom Eternal" Height="350" Width="490" Background="Black" >
+    <Grid Margin="0,6,0,0" Height="327" VerticalAlignment="Top" HorizontalAlignment="Center" Width="482">
+        <ProgressBar Name="Prg" Height="18" Margin="20,181,258,128" Minimum="0" Maximum="200" Value="200"/>
+        <Button  Name="Fight" Content="⚔️" HorizontalAlignment="Left" Margin="20,239,0,0" VerticalAlignment="Top" Height="35" Width="43" Click="Button_OnFight"/>
+        <Button Name="Prote" Content="🛡️" HorizontalAlignment="Left" Margin="95,239,0,0" VerticalAlignment="Top" Height="35" Width="44" Click="ButtonBase_OnProtect"/>
+        <Button Name="Healus" Content="❤️‍🩹" HorizontalAlignment="Left" Margin="180,239,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.55,0.435" Width="44" Click="ButtonBase_OnHeal"/>
+        <Button Name="Conf" Content="Confirm" HorizontalAlignment="Left" Margin="263,238,0,0" VerticalAlignment="Top" Width="204" Height="36" FontFamily="Arial Black" FontWeight="Bold" Foreground="Black" Background="Red" Click="Button_OnPressed"/>
+        <ProgressBar Name="Prgs"  HorizontalAlignment="Left" Height="18" Margin="263,181,0,0" VerticalAlignment="Top" Width="204" Maximum="200" Minimum="0" Value="200" Foreground="#FF0666B0"/>
+        <Image HorizontalAlignment="Left" Height="133" Margin="308,36,0,0" VerticalAlignment="Top" Width="134" Source="/boss1.jpeg"/>
+        <Label x:Name="lbl1" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Width="130" Foreground="White" Height="26" HorizontalContentAlignment="Center"/>
+        <Label  Content="Pedro" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="130" Foreground="White" HorizontalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="133" Margin="74,36,0,0" VerticalAlignment="Top" Width="86" Source="/boss3.jpeg"/>
+        <Label x:Name="cislo" Content="Label" HorizontalAlignment="Left" Margin="440,0,0,0" VerticalAlignment="Top"/>
+        <Image Margin="289,36,34,151" Source="/Bossové/boss1.jpeg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.219"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.289"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="38,36,286,151" Source="/Bossové/boss3.jpeg" Stretch="Fill"/>
 
 
     </Grid>

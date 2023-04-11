@@ -5,6 +5,28 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="chestka.jpeg" />
+    <None Remove="chestka2.jpeg" />
+    <None Remove="small-decorative-wooden-chest.png" />
+    <None Remove="treasure-chest.png" />
+    <None Remove="čestka.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Roman-Numerals" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="chestka.jpeg" />
+    <Resource Include="chestka2.jpeg" />
+    <Resource Include="small-decorative-wooden-chest.png" />
+    <Resource Include="treasure-chest.png" />
+    <Resource Include="čestka.jpeg" />
+  </ItemGroup>
 
 </Project>

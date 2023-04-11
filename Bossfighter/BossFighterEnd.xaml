@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bossfighter.BossFighterEnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bossfighter"
+        mc:Ignorable="d"
+        Title="BossFighterEnd" Height="450" Width="800" Background="#FFB9B903">
+    <Grid>
+        <Label x:Name="Finall" Content="You are Winner!!!" HorizontalAlignment="Left" Margin="153,64,0,0" VerticalAlignment="Top" Height="153" Width="521" FontSize="65"/>
+        <Image HorizontalAlignment="Center" Height="132" Margin="0,259,0,0" VerticalAlignment="Top" Width="200" Source="/small-decorative-wooden-chest.png">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+
+    </Grid>
+</Window>
